@@ -12,7 +12,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from sklearn import metrics
 import seaborn as sns
-
+from gensim import corpora, models, similarities
 # 1. Read data
 data = pd.read_pickle('model/product_list.pkl')
 dictionary = pd.read_pickle('model/Dictionary.pkl')

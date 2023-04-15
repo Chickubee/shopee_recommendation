@@ -23,7 +23,7 @@ dictionary = pd.read_pickle('model/Dictionary.pkl')
 index = pd.read_pickle('model/Index.pkl')
 
 cols=['user_idx','recommendations']
-df_new = pd.read_parquet('Recommend_User.parquet', columns=cols)
+df_new = pd.read_parquet('recommend_User.parquet', columns=cols)
 
 cols_idx = ['product_id','product_idx']
 df_idx = pd.read_parquet('data_index.parquet', columns=cols_idx)
